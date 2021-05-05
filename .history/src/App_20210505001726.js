@@ -41,14 +41,25 @@ function App() {
       <br />
       <div className="content-wrap">
         <Sidebar topAnime={topAnime} />
-        <SearchBar
-          HandleSearch={HandleSearch}
-          search={search}
-          animeList={animeList}
-          SetSearch={SetSearch}
-        />
-        {/* TODO: here I need to find the value that is undefined before the search */}
-        {typeof SetSearch != "undefined" ? (
+        <main>
+          <div className="main-head">
+            <form className="search-box" onSubmit={props.HandleSearch}>
+              <input
+                type="search"
+                placeholder="Search for an anime..."
+                required
+                value={props.search}
+                onChange={(e) => props.SetSearch(e.target.value)}
+              />
+            </form>
+          </div>
+          <div className="anime-list">
+            {props.animeList.map((anime) => (
+              <AnimeCard anime={anime} key={anime.mal_id} />
+            ))}
+          </div>
+        </main>
+        {typeof search.title != "undefined" ? (
           <MainContent
             HandleSearch={HandleSearch}
             search={search}

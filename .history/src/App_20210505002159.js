@@ -47,7 +47,6 @@ function App() {
           animeList={animeList}
           SetSearch={SetSearch}
         />
-        {/* TODO: here I need to find the value that is undefined before the search */}
         {typeof SetSearch != "undefined" ? (
           <MainContent
             HandleSearch={HandleSearch}

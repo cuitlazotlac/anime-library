@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap');
+
+
+@import "./assets/styles/base/main";
+
+@import "./assets/styles/components/animeCard";
+@import "./assets/styles/components/header";
+
+body {
+  margin: 0;
+  font-family: 'Lexend', sans-serif;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Fira Sans', sans-serif;
+}

@@ -41,14 +41,8 @@ function App() {
       <br />
       <div className="content-wrap">
         <Sidebar topAnime={topAnime} />
-        <SearchBar
-          HandleSearch={HandleSearch}
-          search={search}
-          animeList={animeList}
-          SetSearch={SetSearch}
-        />
-        {/* TODO: here I need to find the value that is undefined before the search */}
-        {typeof SetSearch != "undefined" ? (
+        <SearchBar />
+        {typeof search.title != "undefined" ? (
           <MainContent
             HandleSearch={HandleSearch}
             search={search}
