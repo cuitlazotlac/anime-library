@@ -2,7 +2,7 @@ import { useState, useEffect, useLayoutEffect } from "react";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import MainContent from "./components/MainContent";
-import SearchBar from "./components/SearchBar";
+import Search from "./components/SearchBar";
 
 function App() {
   const [animeList, SetAnimeList] = useState([]);
@@ -41,23 +41,16 @@ function App() {
       <br />
       <div className="content-wrap">
         <Sidebar topAnime={topAnime} />
-        <SearchBar
+        {/* {typeof search.title != "undefined" ? ( */}
+        <MainContent
           HandleSearch={HandleSearch}
           search={search}
           animeList={animeList}
           SetSearch={SetSearch}
         />
-        {/* TODO: here I need to find the value that is undefined before the search */}
-        {typeof SetSearch != "undefined" ? (
-          <MainContent
-            HandleSearch={HandleSearch}
-            search={search}
-            animeList={animeList}
-            SetSearch={SetSearch}
-          />
-        ) : (
+        {/* ): (
           "Here goes the initial part"
-        )}
+        )} */}
       </div>
     </div>
   );

@@ -8,12 +8,12 @@ function Header() {
         <Navbar.Brand href="#home">
           <img
             alt=""
-            src={logo}
+            src="/logo.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          Anime Library
+          React Bootstrap
         </Navbar.Brand>
       </Navbar>
     </>

@@ -13,7 +13,7 @@ function Header() {
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          Anime Library
+          React Bootstrap
         </Navbar.Brand>
       </Navbar>
     </>
