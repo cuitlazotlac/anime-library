@@ -14,6 +14,11 @@ function Header() {
             className="d-inline-block align-top"
           />{" "}
           Anime Library
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              <a href="#login">Mark Otto</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
         </Navbar.Brand>
       </Navbar>
     </>
