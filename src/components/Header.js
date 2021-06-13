@@ -9,16 +9,16 @@ function Header() {
           <img
             alt=""
             src={logo}
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
+            width="50"
+            height="50"
+            // className="d-inline-block align-top"
           />{" "}
           Anime Library
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              <a href="#login">Mark Otto</a>
+          {/* <Navbar.Collapse className="justify-content-end"> */}
+            <Navbar.Text >
+              <a href="https://myanimelist.net/" target="_blank">Datesource</a>
             </Navbar.Text>
-          </Navbar.Collapse>
+          {/* </Navbar.Collapse> */}
         </Navbar.Brand>
       </Navbar>
     </>
