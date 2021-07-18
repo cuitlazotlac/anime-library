@@ -1,82 +1,88 @@
 .content-wrap {
-	display: flex;
+  display: flex;
 
-	aside {
-		flex: 1 1 250px;
-		max-width: 250px;
-		padding-right: 16px;
+  aside {
+    flex: 1 1 250px;
+    max-width: 250px;
+    padding-right: 16px;
 
-		nav {
-			padding-left: 16px;
-			padding-right: 16px;
+    nav {
+      padding-left: 16px;
+      padding-right: 16px;
 
-			h3 {
-				color: #313131;
-				font-size: 24px;
-				margin-bottom: 16px;
-			}
+      h3 {
+        color: #000;
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
 
-			a {
-				display: block;
-				padding: 8px 16px;
-				text-align: left;
+      a {
+        display: block;
+        padding: 8px 16px;
+        text-align: left;
 
-				color: #888;
-				font-size: 16px;
-				margin-bottom: 16px;
+        color: #000;
+        font-size: 16px;
+        margin-bottom: 16px;
 
-				background-color: #EEE;
-				border-radius: 999px;
-				text-decoration: none;
+        border-radius: 999px;
+        text-decoration: none;
 
-				transition: 0.4s;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+        border-radius: 10px;
 
-				&:hover {
-					background-color: #313131;
-					color: #AAA;
-				}
-			}
-		}
-	}
+        transition: 0.4s;
 
-	main {
-		flex: 1 1 0%;
-		padding: 0px 16px;
+        &:hover {
+          background-color: #313131;
+          color: #fff;
+        }
+      }
+    }
+  }
 
-		.main-head {
-			display: flex;
-			justify-content: flex-end;
+  main {
+    flex: 1 1 0%;
+    padding: 0px 16px;
 
-			.search-box {
-				display: flex;
-				justify-content: flex-end;
-				flex: 1 1 0%;
-				
-				input {
-					appearance: none;
-					background: none;
-					outline: none;
-					border: none;
+    .main-head {
+      display: flex;
+      justify-content: flex-end;
 
-					display: block;
-					width: 100%;
-					max-width: 400px;
-					padding: 16px;
-					border-radius: 999px;
-					background-color: #EEE;
+      .search-box {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1 1 0%;
 
-					transition: 0.4s;
+        input {
+          appearance: none;
+          background: none;
+          outline: none;
+          border: none;
 
-					::placeholder {
-						color: #888;
-					}
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          padding: 16px;
+          border-radius: 999px;
+          background-color: #eee;
 
-					&:focus, &:valid {
-						background-color: #313131;
-						color: #FFF;
-					}
-				}
-			}
-		}
-	}
-} 
+          transition: 0.4s;
+
+          ::placeholder {
+            color: #888;
+          }
+
+          &:focus,
+          &:valid {
+            background-color: #313131;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
