@@ -25,7 +25,7 @@ function App() {
 
   const FetchAnime = async (query) => {
     const temp = await fetch(
-      `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=10`
+      `https://api.jikan.moe/v4/search/anime?q=${query}&order_by=title&sort=asc&limit=10`
     ).then((res) => res.json());
 
     SetAnimeList(temp.results);

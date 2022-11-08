@@ -1,0 +1,15 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+@import "./assets/styles/base/main.css";
+
+@import "./assets/styles/components/animeCard.css";
+@import "./assets/styles/components/header.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Bangers", cursive;
+}

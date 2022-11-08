@@ -17,6 +17,7 @@ function Header() {
                 <a
                   href="https://github.com/cuitlazotlac/anime-library"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     alt=""
