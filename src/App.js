@@ -11,7 +11,7 @@ function App() {
 
   const GetTopAnime = async () => {
     const temp = await fetch(
-      `https://api.jikan.moe/v3/top/anime/1/bypopularity`
+      `https://api.jikan.moe/v4/top/anime`
     ).then((res) => res.json());
 
     // only get the top 5 anime
